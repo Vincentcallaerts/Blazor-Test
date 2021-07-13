@@ -1,0 +1,10 @@
+﻿@page "/weer"
+@inherits ForcastBase
+
+<h3>Forcast</h3>
+<div class="d-flex">
+    @foreach (var item in Forecasts)
+    {
+        <WeatherDay DayOfWeek="@item.Date.DayOfWeek" Summary="@item.Summary" Temperature="@item.TemperatureC"/>
+    }
+</div>

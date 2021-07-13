@@ -1,0 +1,13 @@
+﻿@page "/c"
+<h3>CommentBox</h3>
+@if (Input.Length < MaxCount)
+{
+    <textarea @bind="Input" @bind:event="oninput" maxlength="@MaxCount" style="height:200px; width:500px"></textarea>
+
+}
+else
+{
+    <p style="color:red">Mag niet langer dan @MaxCount</p>
+    <textarea @bind="Input" @bind:event="oninput" @onchange ="WordUpdate" maxlength="@MaxCount" style="height:200px; width:500px"></textarea>
+}
+<p>@Words</p>

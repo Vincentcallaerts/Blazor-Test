@@ -1,0 +1,11 @@
+﻿@page "/bss"
+<button class="" @onclick="@(e => Speel("blad"))"><img src="/images/blad.png"></button>
+<button class="" @onclick="@(e => Speel("steen"))"><img src="/images/steen.png"></button>
+<button class="" @onclick="@(e => Speel("schaar"))"><img src="/images/schaar.png"></button>
+
+<button class="" @onclick="@(e => Speel("lizard"))"><img src="/images/salamander.png"></button>
+<button class="" @onclick="@(e => Speel("spok"))"><img src="/images/spock.png"></button>
+<p>@RoundInfo</p>
+
+<p>Score computer: @ScoreComputer</p>
+<p>Score user: @ScoreUser</p>
